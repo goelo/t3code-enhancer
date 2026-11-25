@@ -2,6 +2,18 @@
 
 T3 Code 桌面版的主题与界面增强工具，提供安装、状态检测和卸载命令。
 
+## macOS 独立应用
+
+Apple 芯片 Mac 使用独立的 **T3 Code 增强版**，支持加号菜单、模型与思考深度选择、额度与上下文浮层、工作过程折叠联动。首次打开时，可在连接设置中添加已有的 T3 环境来查看历史对话。历史和正在运行的任务由原环境继续管理。
+
+从包含 macOS 增强功能的 T3 Code 源码工作树构建。先在该工作树运行 `vp i`，然后在本仓库运行：
+
+```bash
+node macos.cjs /path/to/t3code-source /path/to/new-output
+```
+
+构建入口会验证应用身份和本机签名，然后输出 `T3 Code Enhancer.app` 的路径。双击应用即可启动。
+
 适用于 T3 Code **0.1.11** 的 **Windows 桌面版**和 **Linux x86_64 官方 AppImage**。Linux 版会安装一个独立的增强版副本。
 
 从 [GitHub Releases](https://github.com/Barometer-2002/t3code-enhancer/releases/latest) 下载安装 ZIP。安装、卸载和界面截图见 [使用教程](使用教程.md)。
